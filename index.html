@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<title>Simple Countdown Timer</title>
+
+		<link rel="stylesheet" href="style.css"/>
+
+	</header>
+	<body onload="loaded()">
+		<div class="frame">
+			<h1>Countdown Timer</h1>
+			<div class="countdown_loader">
+				<ul>
+					<li id="days"></li>
+					<li id="hours"></li>
+					<li id="min"></li>
+					<li id="seconds"></li>
+				</ul>
+			</div>
+			<div class="countdown_name">
+				<ul>
+					<li id="name1">days</li>
+					<li id="name2">hours</li>
+					<li id="name3">min</li>
+					<li id="name4">sec</li>
+				</ul>
+			</div>
+		</div>
+
+		
+
+		<script>
+
+			function loaded(){
+			var future = new Date("Mar 29 2016 12:00:01 GMT+0600 (BDT)");
+			var now = new Date();
+			var presentTime = now.getTime();
+			var timelapse = future - presentTime;
+			
+			var days = timelapse/(3600*1000*24);
+			var unFloat_days = Math.floor(days);
+			var days_final = unFloat_days < 10 ? "0" + unFloat_days : unFloat_days;
+			document.getElementById("days").innerHTML = days_final;
+			var extraDays = days - unFloat_days;
+
+			var hours = extraDays * 24;
+			var unFloat_hours = Math.floor(hours);
+			var hours_final = unFloat_hours < 10 ? "0" + unFloat_hours : unFloat_hours;
+			document.getElementById("hours").innerHTML = hours_final;
+			var extraHours = hours - unFloat_hours;
+
+			var min = extraHours * 60;
+			var unFloat_min = Math.floor(min);
+			var min_final = unFloat_min < 10 ? "0" + unFloat_min : unFloat_min;
+			document.getElementById("min").innerHTML = min_final;
+			var extraMin = min - unFloat_min;
+
+			var seconds = extraMin * 60;
+			var unFloat_seconds = Math.floor(seconds);
+			var seconds_final = unFloat_seconds < 10 ? "0" + unFloat_seconds : unFloat_seconds;
+			document.getElementById("seconds").innerHTML = seconds_final;
+			var extraSeconds = seconds - unFloat_seconds;
+
+			};
+			setInterval(loaded, 1000);
+
+		</script>
+	</body>
+</html>

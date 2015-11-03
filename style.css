@@ -1,0 +1,94 @@
+
+body {
+	background-color: ##7B7B7B;
+	font-family: Stencil;
+	color: rgba(0,0,0,0.6);
+}
+
+.frame h1{
+	text-align: center;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    font-size: 80px;
+}
+
+.countdown_loader {
+	height:156px;
+	margin-left: 290px;
+	margin-top: -50px;
+	font-size: 120px;
+	color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+}
+
+.countdown_loader ul li{
+	text-align: center;
+}
+
+#days {
+	box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.3);
+	background-color: #505050;
+	float:left;
+	list-style: none;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+#hours {
+	box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.3);
+	background-color: #505050;
+	float:left;
+	list-style: none;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+#min {
+	box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.3);
+	background-color: #505050;
+	float:left;
+	list-style: none;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+#seconds {
+	box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.3);
+	background-color: #505050;
+	float:left;
+	list-style: none;
+	padding: 5px;
+}
+
+.countdown_name {
+	margin-left: 360px;
+	font-size: 30px;
+	color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+
+.countdown_name ul{
+	list-style: none;
+	margin-top: -20px;
+}
+
+.countdown_name ul li{
+	float:left;
+}
+
+#name1 {
+	margin-left: 0px;
+}
+
+#name2 {
+	margin-left: 110px;
+}
+
+#name3 {
+	margin-left: 80px;
+}
+
+#name4 {
+	margin-left: 100px;
+}
